@@ -11,7 +11,7 @@ It is a big decision because there would be plenty of things you need to work on
 To be honest, I didn't prepare all these things very well. I made detours along the process. But I believe detours can make good lessons sometimes. So I am writing this post to share some of my ideas.
 
 
-## First, A Question For You
+## First, a Question for You
 
 ### How determined are you on going studying abroad?
 A. I am very determined.  
@@ -34,19 +34,69 @@ If you are not that optimistic about earning yourself a postgraduate recommendat
 
 - *For those who choose E:*  
 Directly finding a job is a thrilling option. But there are chances you change your mind in a year or two, or even after several years of working. I came to JLU with a very settled mind of looking for a job after graduation. Ironically, look where am I now.  
-If you change your mind halfway, it is totally Ok. Just take those tests needed for an admission and prepare your documents. You can apply a graduate school at any time. (Many of my friends decided to go for further education abroad even if they had been working for many years.) **But do note that even if you are not a student applicant, your undergraduate grades still matters.**
+If you change your mind halfway, it is totally Ok. Just take those tests needed for an admission and prepare your documents. You can apply for a graduate school at any time. (Many of my friends decided to go for further education abroad even if they had been working for many years.) **But do note that even if you are not a student applicant, your undergraduate grades still matters.**
+
+## Choose Universities and Programs
+To minimize the risk, you need to pick more than 6 universities or programs to apply.
+While deciding which to apply, there are several things you need to concern:  
+1. **Do I like this university?** (Location, History, Specilty Ranking, Housing, and so on)  
+2. **Does this program suits me?** (Program Settings, Requirements, Self Interests, Scholarships, Apply Deadlines)
+
+
+Once you select out all your options, recheck those program official sites and their admission requirements.(Documents needed for applying, tests score needed...)
 
 
 ## Tests to Take
-If you have continued to this part, you are at least interested in studying abroad. To give you a bad news, preparing for required test are usually tedious and hard. However things would be better if you enjoy English as a culture, other than a language. In latter parts I will give some tips on learning English. So here let's head back to the topic: tests.  
+To give you a bad news, preparing for required test are usually tedious and hard. However things would be better if you do enjoy play with English. In latter parts I will give some tips on learning English. Here let's head back to the topic: tests.  
 There are normally two kinds of tests:  
 1. **Language Tests** ([TOEFL][TOEFL-SITE], [IELTS][IELTS-SITE])  
 For the first category, all the tests focus on measuring test taker's language usage level. Depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
 2. **Ability Tests** ([GRE][GRE-SITE], [GMAT][GMAT-SITE], [LSAT][LSAT-SITE])  
-For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely going to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can achieve higher scores.
+For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can get high scores.
+
+Normally, you will need to report two scores: one for language test, one for ability test. Different programs requires different tests.(For example, some requires TOEFL and GRE, others requires IELTS and GMAT). Check the official site of the program you are interested in for instructions on which test(tests) you should to take.
+
+I took TOEFL and GRE, if you would like to know more about these exams, you are welcomed to email me.
+
+## GPA
+GPA is crucial for your admission. Try your very best for every major courses. They do matters a lot.
+
+Different programs have different merits of calculating GPA. Sometimes one program would ask for your general GPA and your major GPA. Some programs exclude thesis courses while calculating GPA. So don't paste the GPA given by the uims.jlu.edu.cn. Follow the instructions given by the program site.
+
+And to give you another bad news, most programs related to computer science **requires Major GPA**, which means it is **not useful to re-enroll some elective courses, even if you get a better general GPA**. 
 
 
-## Grades You should Focus on
+## Other Documents Required
+- Resume(CV)  
+A main accordance for knowing who you are. Refer to program sites for instructions on required details in your resume.
+- Personal Statement  
+An essay used for explaining why you are interested in CS(or other fields), your acquired abilities, your plans on this profession, you passion and qualities for doing research and why you pick one specific university or program.
+- Reference Letters  
+Normally, a program will ask you to provide no less than 3 referees. You can ask professors you are familar with or who once taught you.
+- Transcript
+Official or unofficial, depends on program requirements.
+
+## How to Improve Your Competitiveness
+
+### Publications
+Publications, if you have any, is a strength which will guarantee you an obvious advantage. Follow your tutor on some research, do whatever you can. This kind of experience sometimes can make up for some of your weakness on GPA or test scores.
+
+### Internships
+It is better that you have conducted one intership or two. If you never conduct one, there is no need to panic. You can still receive many offers if other aspects of you application is convincing.
+
+## Tips for Learning English
+
+### Read Books Written in English
+
+### Read Some Magazines
+
+### Listen to English Radio
+
+### Book Recommendation
+*On Writing Well*
+
+
+
 
 [IELTS-SITE]: https://ielts.etest.edu.cn
 [TOEFL-SITE]: https://toefl.etest.net.cn
