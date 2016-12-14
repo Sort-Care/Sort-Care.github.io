@@ -57,14 +57,14 @@ Once you select out all your options, recheck those program official sites and t
 
 
 ## Tests to Take
-To give you a bad news, preparing for required test are usually tedious and hard. However things would be better if you do enjoy play with English. In latter parts I will give some tips on learning English. Here let's head back to the topic: tests.  
+To give you a bad news, preparing for required test are usually tedious and hard. However things would be better if you do enjoy playing with English. In latter parts I will give some tips on learning English. Here let's head back to the topic: tests.  
 There are normally two kinds of tests:  
 1. **Language Tests** ([TOEFL][TOEFL-SITE], [IELTS][IELTS-SITE])  
-For the first category, all the tests focus on measuring test taker's language usage level. Depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
+For the first category, all the tests focus on measuring test taker's use and understand English at the university level. Depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
 2. **Ability Tests** ([GRE][GRE-SITE], [GMAT][GMAT-SITE], [LSAT][LSAT-SITE])  
-For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can get high scores.
+For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, critical thinking skills, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can get high scores.
 
-Normally, you will need to report two scores: one for language test, one for ability test. Different programs requires different tests.(For example, some requires TOEFL and GRE, others requires IELTS and GMAT). Check the official site of the program you are interested in for instructions on which test(tests) you should to take.
+Normally, you will need to report two scores: one for language test, one for ability test. Different programs requires different tests.(For example, some requires TOEFL and GRE, others requires IELTS and GMAT). Check the official site of the program you are interested in for instructions on which test(tests) you should take.
 
 I took TOEFL and GRE, if you would like to know more about these exams, you are welcomed to email me.
 
@@ -110,7 +110,7 @@ Most articles in a magazine like NG is not easy to read: full of difficult words
 {% include figure image_path="/assets/images/radio.jpg" alt="english radio" caption="English Radio by Liang Yuan" %}
 This is the application I used. You can pick any station to listen. My favorites are *the Fox News* and *NPR*.
 
-### Writing Book Recommendation
+### Writing eBook Recommendation
 *On Writing Well*  
 [Baidu Pan, Password: k35z][OWW-DOWNLOAD]
 
