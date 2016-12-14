@@ -78,9 +78,9 @@ analytics:
 # Site Author
 author:
   name             : "Ji Haoyu"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.png"
   bio              : "I am an amazing person."
-  location         : "Jilin University, Changchun, China"
+  location         : "Jilin University, China"
   email            : "workingjhy@gmail.com"
   uri              :
   bitbucket        :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/Sort-Care"
+  github           : "Sort-Care"
   google_plus      :
   keybase          :
   instagram        :
