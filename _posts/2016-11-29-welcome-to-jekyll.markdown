@@ -61,7 +61,7 @@ To give you a bad news, preparing for required test are usually tedious and hard
 There are normally two kinds of tests:  
 1. **Language Tests** ([TOEFL][TOEFL-SITE], [IELTS][IELTS-SITE])  
 For the first category, all the tests focus on measuring test taker's use and understand English at the university level. Depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
-2. **Ability Tests** ([GRE][GRE-SITE], [GMAT][GMAT-SITE], [LSAT][LSAT-SITE])  
+2. **Academic Ability Tests** ([GRE][GRE-SITE], [GMAT][GMAT-SITE], [LSAT][LSAT-SITE])  
 For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, critical thinking skills, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can get high scores.
 
 Normally, you will need to report two scores: one for language test, one for ability test. Different programs requires different tests.(For example, some requires TOEFL and GRE, others requires IELTS and GMAT). Check the official site of the program you are interested in for instructions on which test(tests) you should take.
