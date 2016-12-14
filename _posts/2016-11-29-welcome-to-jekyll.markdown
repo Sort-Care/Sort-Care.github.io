@@ -3,8 +3,18 @@ layout: single
 title:  "Things to Plan for Pursuing Further Education Abroad"
 date:   2016-12-14 09:08:55 +0800
 categories: Tips
----
 
+gallery:
+  - url: /assets/images/NG.png
+    image_path: /assets/images/NG.png
+    alt: "NG"
+    title: "National Geographic"
+  - url: /assets/images/TE.png
+    image_path: /assets/images/TE.png
+    alt: "TE"
+    title: "The Economists"
+---
+{% include toc %}
 I am a senior student in JLU, working on earning a U.S. graduate school offer right now. 
 I enjoy learning English and love CS, so I chose to go abroad to further my education.
 It is a big decision because there would be plenty of things you need to work on: required tests, GPAs, publications, and so forth.
@@ -86,14 +96,24 @@ It is better that you have conducted one intership or two. If you never conduct 
 
 ## Tips for Learning English
 
+
 ### Read Books Written in English
+Modern novels are easier for starters. You can pick books like *Harry Potter*, *The Twilight* to read. There are many stores on taobao selling imported books on reasonable prices. Don't buy too much at one time, instead, starting with no more than 2 books. And also, try avoid reading a big tome of book, it would be extremely frustrating. When you are reading, try guessing words instead of looking them up immediately.
 
 ### Read Some Magazines
+{% include gallery caption="National Geographic & the Economists" %}
+Most articles in a magazine like NG is not easy to read: full of difficult words, long sentence structures, abstruse topics... However, forcing yourself to read them will definitly improve your reading ability. When you are accustomed to reading passages in NG or TE, it would make you more confident when you are faced with test reading passages. And also, if you like, try to remember some sentences in them. Your english will be improving by leaps and bounds.
+
+[The Economists Pdf Download][TE-DOWNLOAD]
 
 ### Listen to English Radio
+{% include figure image_path="/assets/images/radio.jpg" alt="english radio" caption="English Radio by Liang Yuan" %}
+This is the application I used. You can pick any station to listen. My favorites are *the Fox News* and *NPR*.
 
-### Book Recommendation
-*On Writing Well*
+### Writing Book Recommendation
+*On Writing Well*  
+[Baidu Pan, Password: k35z][OWW-DOWNLOAD]
+
 
 
 
@@ -103,3 +123,5 @@ It is better that you have conducted one intership or two. If you never conduct 
 [GRE-SITE]: https://gre.etest.net.cn/login.do
 [GMAT-SITE]: https://gmat.etest.edu.cn
 [LSAT-SITE]: http://www.lsac.org
+[TE-DOWNLOAD]: https://xmuplus.github.io
+[OWW-DOWNLOAD]:https://pan.baidu.com/s/1jHAgtnC
