@@ -77,13 +77,13 @@ And to give you another bad news, most programs related to computer science **re
 
 
 ## Other Documents Required
-- Resume(CV)  
+- **Resume(CV)**  
 A main accordance for knowing who you are. Refer to program sites for instructions on required details in your resume.
-- Personal Statement  
+- **Personal Statement**  
 An essay used for explaining why you are interested in CS(or other fields), your acquired abilities, your plans on this profession, you passion and qualities for doing research and why you pick one specific university or program.
-- Reference Letters  
+- **Reference Letters**  
 Normally, a program will ask you to provide no less than 3 referees. You can ask professors you are familar with or who once taught you.
-- Transcript
+- **Transcript**
 Official or unofficial, depends on program requirements.
 
 ## How to Improve Your Competitiveness
@@ -107,8 +107,11 @@ Most articles in a magazine like NG is not easy to read: full of difficult words
 [The Economists Pdf Download][TE-DOWNLOAD]
 
 ### Listen to English Radio
-{% include figure image_path="/assets/images/radio.jpg" alt="english radio" caption="English Radio by Liang Yuan" %}
 This is the application I used. You can pick any station to listen. My favorites are *the Fox News* and *NPR*.
+{% include figure image_path="/assets/images/radio.jpg" alt="english radio" caption="English Radio by Liang Yuan" %}
+
+Also, iTunes can be used for listening international radios. Besides stations for talks and news, there are stations for different kinds of music. Check it out!
+{% include figure image_path="/assets/images/itunes.png" alt="itunes radio" caption="Radio Stations in iTunes" %}
 
 ### Writing eBook Recommendation
 *On Writing Well*  
