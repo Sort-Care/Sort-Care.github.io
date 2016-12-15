@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Things to Plan for Pursuing Further Education Abroad"
+title:  "Things to Prepare for Furthering Your Education Abroad"
 date:   2016-12-14 09:08:55 +0800
 categories: Tips
 
@@ -43,7 +43,7 @@ Postgraduate entrance exams require extreme hard work and long-time preparing.
 If you are not that optimistic about earning yourself a postgraduate recommendation, don't hesitate to start preparing for your entrance exam. In normal cases, a no less than 5 months preparation is necessary. So plan ahead, start early, and focus on it.
 
 - *For those who choose E:*  
-Directly finding a job is a thrilling option. But there are chances you change your mind in a year or two, or even after several years of working. I came to JLU with a very settled mind of looking for a job after graduation. Ironically, look where am I now.  
+Directly finding a job is a thrilling option. But there are chances you change your mind in a year or two, or even after several years of working. I came to JLU with a very settled mind of looking for a job after graduation. Ironically, look where I am now.  
 If you change your mind halfway, it is totally Ok. Just take those tests needed for an admission and prepare your documents. You can apply for a graduate school at any time. (Many of my friends decided to go for further education abroad even if they had been working for many years.) **But do note that even if you are not a student applicant, your undergraduate grades still matters.**
 
 ## Choose Universities and Programs
@@ -60,7 +60,7 @@ Once you select out all your options, recheck those program official sites and t
 To give you a bad news, preparing for required test are usually tedious and hard. However things would be better if you do enjoy playing with English. In latter parts I will give some tips on learning English. Here let's head back to the topic: tests.  
 There are normally two kinds of tests:  
 1. **Language Ability Tests** ([TOEFL][TOEFL-SITE], [IELTS][IELTS-SITE])  
-For the first category, all the tests focus on measuring test taker's use and understand English at the university level. Depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
+For the first category, all the tests focus on measuring test taker's use and understand English at the university level. For expressing a specific meaning, depending on the words you choose, the sentences you write, you scores may vary. But that doesn't mean you should always choose hard words over easy ones. Using a difficult word in a wrong way could be catastrophic. So instead of using difficult words, pick words you can manage.  
 2. **Academic Ability Tests** ([GRE][GRE-SITE], [GMAT][GMAT-SITE], [LSAT][LSAT-SITE])  
 For the second category, most tests focus on your reasoning ability, logical analysing ability, quantative ability, critical thinking skills, and so forth. In this kinds of exams, language is considered a tool for conveying your thought. So you are not likely to get a better score by doing things like replacing 'hard-working' with 'assiduous'. But by improving your logical reasoning skills and practicing a lot, I am sure you can get high scores.
 
@@ -71,7 +71,7 @@ I took TOEFL and GRE, if you would like to know more about these exams, you are 
 ## GPA
 GPA is crucial for your admission. Try your very best for every major courses. They do matters a lot.
 
-Different programs have different merits of calculating GPA. Sometimes one program would ask for your general GPA and your major GPA. Some programs exclude thesis courses while calculating GPA. So don't paste the GPA given by the uims.jlu.edu.cn. Follow the instructions given by the program site.
+Different programs have different merits of calculating GPA. Sometimes one program would ask for your general GPA and your major GPA. Some programs exclude thesis courses while calculating GPA. So don't paste the GPA given by the uims.jlu.edu.cn directly. Follow the instructions given by the program site.
 
 And to give you another bad news, most programs related to computer science **requires Major GPA**, which means it is **not useful to re-enroll some elective courses, even if you get a better general GPA**. 
 
