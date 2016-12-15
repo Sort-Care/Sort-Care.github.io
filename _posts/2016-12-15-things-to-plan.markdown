@@ -83,7 +83,7 @@ A main accordance for knowing who you are. Refer to program sites for instructio
 An essay used for explaining why you are interested in CS(or other fields), your acquired abilities, your plans on this profession, you passion and qualities for doing research and why you pick one specific university or program.
 - **Reference Letters**  
 Normally, a program will ask you to provide no less than 3 referees. You can ask professors you are familar with or who once taught you.
-- **Transcript**
+- **Transcript**  
 Official or unofficial, depends on program requirements.
 
 ## How to Improve Your Competitiveness
@@ -96,17 +96,16 @@ It is better that you have conducted one intership or two. If you never conduct 
 
 ## Tips for Learning English
 
-
-### Read Books Written in English
+### Buy Books Written in English
 Modern novels are easier for starters. You can pick books like *Harry Potter*, *The Twilight* to read. There are many stores on taobao selling imported books on reasonable prices. Don't buy too much at one time, instead, starting with no more than 2 books. And also, try avoid reading a big tome of book, it would be extremely frustrating. When you are reading, try guessing words instead of looking them up immediately.
 
-### Read Some Magazines
+### Chew on Some Magazines
 {% include gallery caption="National Geographic & the Economists" %}
 Most articles in a magazine like NG is not easy to read: full of difficult words, long sentence structures, abstruse topics... However, forcing yourself to read them will definitly improve your reading ability. When you are accustomed to reading passages in NG or TE, it would make you more confident when you are faced with test reading passages. And also, if you like, try to remember some sentences in them. Your english will be improving by leaps and bounds.
 
 [The Economists Pdf Download][TE-DOWNLOAD]
 
-### Listen to English Radio
+### Abandon yourself to listening English Radios
 This is the application I used. You can pick any station to listen. My favorites are *the Fox News* and *NPR*.
 {% include figure image_path="/assets/images/radio.jpg" alt="english radio" caption="English Radio by Liang Yuan" %}
 
