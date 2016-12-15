@@ -14,7 +14,7 @@ gallery:
     alt: "TE"
     title: "The Economists"
 ---
-{% include toc %}
+{% include toc title="CONTENTS" %}
 I am a senior student in JLU, working on earning a U.S. graduate school offer right now. 
 I enjoy learning English and love CS, so I chose to go abroad to further my education.
 It is a big decision because there would be plenty of things you need to work on: required tests, GPAs, publications, and so forth.
