@@ -6,6 +6,7 @@ categories: Tips
 
 excerpt: "Some suggestions on what to expect and what to prepare for when you are considering studying abroad."
 header:
+  teaser: /assets/images/city.jpg
   overlay_image: /assets/images/city.jpg
   overlay_filter: 0.4 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**InterfaceLIFT**](https://interfacelift.com/wallpaper/downloads/date/any/)"
