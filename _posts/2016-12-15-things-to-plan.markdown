@@ -4,6 +4,12 @@ title:  "Things to Prepare for Furthering Your Education Abroad"
 date:   2016-12-14 09:08:55 +0800
 categories: Tips
 
+excerpt: "Some suggestions on what to expect and what to prepare for when you are considering studying abroad."
+header:
+  overlay_image: /assets/images/city.jpg
+  overlay_filter: 0.4 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**InterfaceLIFT**](https://interfacelift.com/wallpaper/downloads/date/any/)"
+
 gallery:
   - url: /assets/images/NG.png
     image_path: /assets/images/NG.png
