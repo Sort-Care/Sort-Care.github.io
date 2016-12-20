@@ -2,7 +2,7 @@
 layout: single
 title:  "Things to Prepare for Furthering Your Education Abroad"
 date:   2016-12-14 09:08:55 +0800
-categories: Tips
+#categories: Tips
 
 excerpt: "Some suggestions on what to expect and what to prepare for when you are considering studying abroad."
 header:
