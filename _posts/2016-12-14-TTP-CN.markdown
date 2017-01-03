@@ -126,6 +126,6 @@ GPA对于出国申请非常重要。认真对待每一门课程，它们几乎�
 [TOEFL-SITE]: https://toefl.etest.net.cn
 [GRE-SITE]: https://gre.etest.net.cn/login.do
 [GMAT-SITE]: https://gmat.etest.edu.cn
-[LSAT-SITE]: http://www.lsac.org
+[LSAT-SITE]: www.lsac.org
 [TE-DOWNLOAD]: https://xmuplus.github.io
 [OWW-DOWNLOAD]:https://pan.baidu.com/s/1jHAgtnC
