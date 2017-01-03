@@ -131,6 +131,6 @@ Also, iTunes can be used for listening international radios. Besides stations fo
 [TOEFL-SITE]: https://toefl.etest.net.cn
 [GRE-SITE]: https://gre.etest.net.cn/login.do
 [GMAT-SITE]: https://gmat.etest.edu.cn
-[LSAT-SITE]: http://www.lsac.org
+[LSAT-SITE]: www.lsac.org
 [TE-DOWNLOAD]: https://xmuplus.github.io
 [OWW-DOWNLOAD]:https://pan.baidu.com/s/1jHAgtnC
