@@ -22,7 +22,15 @@ gallery:
     title: "The Economists"
 ---
 {% include toc title="CONTENTS" %}
-I am a senior student in JLU, working on earning a U.S. graduate school offer right now. 
+<span style = "display:block;
+	float:left;
+	font-family:Georgia;
+	font-size: 310%;
+	font-weight: bold;
+	line-height: 90%;
+	margin-right: 6px;
+	margin-bottom:-2px;
+	margin-top: 7px;">I</span> am a senior student in JLU, working on earning a U.S. graduate school offer right now. 
 I enjoy learning English and love CS, so I chose to go abroad to further my education.
 It is a big decision because there would be plenty of things you need to work on: required tests, GPAs, publications, and so forth.
 To be honest, I didn't prepare all these things very well. I made detours along the process. But I believe detours can make good lessons sometimes. So I am writing this post to share some of my ideas.
