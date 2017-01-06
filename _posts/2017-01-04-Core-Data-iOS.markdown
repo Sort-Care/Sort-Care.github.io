@@ -8,14 +8,23 @@ excerpt: "A Simplified Introduction of iOS Core Data: Initializing Core Data sta
 header:
   teaser: /assets/images/codeback.jpg
   overlay_image: /assets/images/codeback.jpg
-  overlay_filter: 0.6 # same as adding an opacity of 0.5 to a black background
+  overlay_filter: 0.4 # same as adding an opacity of 0.5 to a black background
   
 ---
+{% include toc title="Contents" %}
 
 ## Initializing The Core Stack
 
 ### What is Core Stack?
-**A collection of framework objects** that are accessed as part of the initialization of Core Data and that mediate between the objects in your application and external data stores.  
+**<span style = "display:block;
+	float:left;
+	font-family:Georgia;
+	font-size: 310%;
+	font-weight: bold;
+	line-height: 90%;
+	margin-right: 6px;
+	margin-bottom:-2px;
+	margin-top: 7px;">A</span> collection of framework objects** that are accessed as part of the initialization of Core Data and that mediate between the objects in your application and external data stores.  
 It handles all of the interactions with the external data stores so that your application can focus on its business logic.  
 The stack consists of three primary objects:
 
@@ -117,6 +126,31 @@ It is just like an intelligent scratch pad. When you fetch objects from a persis
 All managed objects must be registered with a managed object context. You use the context to add objects to the object graph and remove objects from the object graph. The context tracks the changes you make, both to individual objects’ attributes and to the relationships between objects. By tracking changes, the context is able to provide undo and redo support for you. It also ensures that if you change relationships between objects, the integrity of the object graph is maintained.
 
 If you choose to save the changes you have made, the context ensures that your objects are in a valid state. If they are, the changes are written to the persistent store (or stores), new records are added for objects you created, and records are removed for objects you deleted.
+
+
+## Creating and Saving Managed Objects
+<span style = "display:block;
+	float:left;
+	font-family:Georgia;
+	font-size: 310%;
+	font-weight: bold;
+	line-height: 90%;
+	margin-right: 6px;
+	margin-bottom:-2px;
+	margin-top: 7px;">O</span>nce you have defined your managed object model and initialized the Core Data stack within your application, you are ready to start creating objects for data storage.
+
+### Creating Managed Objects
+An <span style = "color:#f0f0f0; background-color:#ff5555; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">
+NSManagedObject</span> instance implements the basic behavior required of a Core Data model object.
+The <span style = "color:#f0f0f0; background-color:#ff5555; padding:0.06em 0.5em 0.06em; border-radius:6px;">
+NSManagedObject</span> instance requires two elements:
+
+- An Entity Description (<span style = "color:#f0f0f0; background-color:#ff8844; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">NSEntityDescription</span>)  
+The entity description includes the name of the entity that the object represents and its attributes and relationships.
+- A Managed Object Context (<span style = "color:#f0f0f0; background-color:#ff55aa; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">NSManagedObjectContext</span>)  
+The managed object context represents a scratch pad where you create the managed objects. The context tracks changes to and relationships between objects.
+
+#### <span style="color:#FFFFFF; background-color:#333333; padding: 0.1em 0.5em 0.1em; border-radius:10px; box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);">Example</span> <span style="color:#ffffff; background-color:#888888; padding: 0.1em 0.5em 0.1em; border-radius:10px; box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);">Create Object</span>
 
 
 ## Fetching Objects
