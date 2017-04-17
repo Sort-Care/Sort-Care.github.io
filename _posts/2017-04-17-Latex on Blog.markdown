@@ -3,7 +3,6 @@ layout: single
 title:  "Latex on Blog"
 date:   2017-04-17 09:08:55 +0800
 #categories: iOS
-math: true
 
 excerpt: "How to make your blog support Latex"
 header:
