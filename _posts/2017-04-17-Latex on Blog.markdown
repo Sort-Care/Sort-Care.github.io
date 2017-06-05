@@ -35,7 +35,7 @@ Check [Mathjax fdocumentations][Mathjax-doc] for this step's instructions. Note 
 And usually, if you are using a jekyll theme, this include line should go to a file in the ``_includes/`` folder. In my case, I put it into the ``scripts.html`` file. You can also create a file for doing this, a file named ``custom.html`` for an example.
 
 ### Putting mathematics in a web page
-If everything goes fine, you should get a working site with Mathjax. For usages of writing mathematics on page, check [MathJax Doc][Mathjax-page]. Use my blog as an example:
+If everything goes fine, you should get a working site with Mathjax. For usages of writing mathematics on page, check [MathJax Doc][Mathjax-page]. Use my blog as an example:  
 Math code:
 {% highlight latex %}
 \[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\]
@@ -48,9 +48,12 @@ $$ p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))$$
 ## Using Katex instead of Mathjax
 Katex is faster than Mathjax. To migrate, first check [kramdown doc][kramdown-katex]. You need ``JQuery``, ``Katex`` and an automatic rendering script. Check [Katex on Github][katex-git] and [Auto render][auto-render]. After doing these, you should have a working site with Katex.
 
+
+
 [jekyll-doc]:https://jekyllrb.com/docs/configuration/
 [Mathjax-doc]:http://docs.mathjax.org/en/latest/start.html
 [Mathjax-page]:http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page
 [kramdown-katex]:https://kramdown.gettalong.org/math_engine/mathjax.html
 [katex-git]:https://github.com/Khan/KaTeX
 [auto-render]:https://github.com/Khan/KaTeX/blob/master/contrib/auto-render/README.md
+
