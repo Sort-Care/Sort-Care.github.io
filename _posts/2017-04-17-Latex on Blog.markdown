@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Latex on Blog"
+title:  "Add Latex Support for Minimal Mistakes"
 date:   2017-04-17 09:08:55 +0800
 #categories: iOS
 mathjax: true
@@ -15,18 +15,8 @@ header:
 
 {% include toc title="Contents" %}
 
-## Katex Test
+## Add Latex Support for Minimal Mistakes
+
+If you are seeing the latex name below, it means latex works for this site:
 
 $$ \LaTeX $$
-$$x$$
-
-
-This is a test $$x$$
-
-no
-
-$$
-a = \sqrt{b^2 + c^3}
-$$
-
-fdff
