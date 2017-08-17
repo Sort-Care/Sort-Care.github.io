@@ -374,6 +374,15 @@ var starter_data = {
 ### Swig模板样例
 {% include figure image_path="/assets/images/swig_template.png" alt="Swig模板" caption="Swig模板" %}
 
+## 说明视频
+### 项目运行和基本配置
+<object width="320" height="180"
+data="https://www.youtube.com/embed/H-Z_DdyMV1I">
+</object>
+### Swig模板
+### 页面路由
+### 
+
 
 
 
@@ -381,12 +390,12 @@ var starter_data = {
 
 
 [NODEJS]: https://nodejs.org/en/
-[Materialize]: http://materializecss.com/
-[Swig-Template]: http://node-swig.github.io/swig-templates/
+[Materialize]: https://materializecss.com/
+[Swig-Template]: https://node-swig.github.io/swig-templates/
 [AG]: https://github.com/ggreer/the_silver_searcher
 [ATOM]: https://atom.io
 [VSCODE]: https://code.visualstudio.com
-[BRACKETS]: http://brackets.io
-[MSYS2]: http://www.msys2.org
+[BRACKETS]: https://brackets.io
+[MSYS2]: https://www.msys2.org
 [Bullup]: https://github.com/guojingming/bullup5v5
 [NWJS]: https://nwjs.io/
