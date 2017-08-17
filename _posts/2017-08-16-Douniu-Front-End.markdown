@@ -376,12 +376,19 @@ var starter_data = {
 
 ## 说明视频
 ### 项目运行和基本配置
-<object width="320" height="180"
-data="https://www.youtube.com/embed/H-Z_DdyMV1I">
-</object>
+<iframe width="320" height="200" src="https://www.youtube.com/embed/rEGYzdQ0MYw" frameborder="0" allowfullscreen></iframe>
+
 ### Swig模板
+<iframe width="320" height="200" src="https://www.youtube.com/embed/uGBolJHGqSk" frameborder="0" allowfullscreen></iframe>
+
 ### 页面路由
-### 
+<iframe width="320" height="200" src="" frameborder="0" allowfullscreen></iframe>
+
+### 后端交互
+
+### 目前进度
+
+### 潜在问题和bug
 
 
 
