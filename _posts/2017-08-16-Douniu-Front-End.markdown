@@ -47,10 +47,18 @@ header:
 #### 安装依赖
 因为页面使用到了node的一些包，所以需要在ForK和Clone下[Bullup斗牛仓库][Bullup]后，使用
 ```
-node install [package name]
+node install
 ```
-先安装``package.json``中的依赖包。之后参考[Node Webkit Official Website][NWJS]文档中
+先安装``package.json``中的依赖包。之后参考[Node Webkit Official Website][NWJS]文档中的运行方法进行运行。
 #### 运行
+在命令行中：
+```
+cd /path/to/your/app
+/path/to/nw .
+```
+其中``/path/to/nw``是下载的nwjs的二进制运行文件，在Windows系统下，对应的是``nw.exe``；在Linux系统下，为``nw``；在MacOS下，为``nwjs.app/Contents/MacOS/nwjs``.
+
+在windows系统下，可以通过直接拖拽``SPAFront``文件夹，到``nw.exe``程序上，来运行前端界面。
 
 
 ## 文件结构
@@ -318,7 +326,12 @@ SPAFront/
 房间</span>的概念，再后来的逻辑梳理中，将该概念更改成为了<span style = "color:#f0f0f0; background-color:#ff5555; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">战队</span>，故在文件名中，``room``实际指代与战队有关的内容。
 
 因为目前代码未经过系统整理，所以控件对应的js逻辑可能散落在各处，建议安装[ag(silver-search)][AG]（不支持windows，但可以使用[msys2][MSYS2]在window模拟Linux命令终端）或者其他拥有类似搜索功能的编辑器([Atom][ATOM], [VSCode][VSCODE], [Brackets][BRACKETS]等)，配合git来进行项目内的全局搜索，来定位页面上某个id或者class的元素的所有被使用的位置。
- 
+
+## 前端Swig模板结构说明
+<span style = "color:#f0f0f0; background-color:#f50057; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">数据</span> ------>
+<span style = "color:#f0f0f0; background-color:#9575cd; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">Swig模板文件</span> ------>
+<span style = "color:#f0f0f0; background-color:#ff9800; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">最终页面</span>
+
 
 
 
