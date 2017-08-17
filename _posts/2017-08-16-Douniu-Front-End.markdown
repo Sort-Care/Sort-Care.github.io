@@ -332,6 +332,48 @@ SPAFront/
 <span style = "color:#f0f0f0; background-color:#9575cd; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">Swig模板文件</span> ------>
 <span style = "color:#f0f0f0; background-color:#ff9800; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">最终页面</span>
 
+几乎所有界面，都需要与后台数据相融合，然后再加载到主页面框架中的``div.content``中去。为了实现这一个流程，在文件``swig.js``中封装了两个函数：
+{% highlight js linenos %}
+var douniu = {};
+
+//Render file(pageRef) with data(data).
+douniu.loadSwigView = function (pageRef, data) {
+	var	swig = require('swig');
+	return swig.renderFile(pageRef, data || {});
+}; // Loading views/swigTemplate.html 
+
+//Render file(pageRef) with data(data)
+//and load them into target div(target) with its id(target).
+douniu.loadTemplateIntoTarget = function(pageRef, data, target){
+	var template = douniu.loadSwigView(pageRef, data);
+	$('#' + target).html(template);
+}
+{% endhighlight %}
+其中第一个方法``douniu.loadSwigView``仅为将数据加载到文件名为``pageRef``的模板文件中去的方法，其返回结果为字符串类型，需要存放在变量中，然后再用``html``方法加载到页面中去； 第二个方法``douniu.loadTemplateIntoTarget``则是直接将数据封装进模板并且加载到``id``为``target``的页面标签中去。
+
+### 数据样例
+以下为主页内容中需要展示的<span style = "color:#f0f0f0; background-color:#f44336; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">赛事模拟数据</span>，为了简化示例，其中包括了赛事的名称和赛事说明：
+{% highlight js linenos %}
+var starter_data = {
+		tournaments:[
+			{
+				name:'S7 Championship',
+				description: 'Starting at October'
+			},
+			{
+				name:'MSI Championship',
+				description: 'Starting at May'
+			}
+			
+		]
+		...
+	};
+{% endhighlight %}
+
+
+### Swig模板样例
+{% include figure image_path="/assets/images/swig_template.png" alt="Swig模板" caption="Swig模板" %}
+
 
 
 
