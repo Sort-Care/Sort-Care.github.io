@@ -47,9 +47,15 @@ header:
 #### 安装依赖
 因为页面使用到了node的一些包，所以需要在ForK和Clone下[Bullup斗牛仓库][Bullup]后，使用
 ```
-node install
+npm install
 ```
 先安装``package.json``中的依赖包。之后参考[Node Webkit Official Website][NWJS]文档中的运行方法进行运行。
+
+如果在后续的运行过程中有报错包缺失，使用
+```
+npm install [package name]
+```
+
 #### 运行
 在命令行中：
 ```
@@ -382,13 +388,76 @@ var starter_data = {
 <iframe width="320" height="200" src="https://www.youtube.com/embed/uGBolJHGqSk" frameborder="0" allowfullscreen></iframe>
 
 ### 页面路由
+页面路由通过为页面元素添加点击事件，来进行路由，动态加载主页框架中的内容。
 <iframe width="320" height="200" src="" frameborder="0" allowfullscreen></iframe>
+
 
 ### 后端交互
 
 ### 目前进度
 
 ### 潜在问题和bug
+
+## Git操作
+### Fork and Clone
+我们先找一个仓库，在这个仓库点击Fork
+有两种方式，第一种是安装一个Github的图形界面，然后选择Open In Desktop
+另一种是使用命令行
+第一种比较简单，我演示一下第二种
+1. 先复制项目的链接
+https://github.com/Sort-Care/2048.git
+注意结尾是`.git`
+不要复制地址栏的，那个后面是没有`.git`的  
+然后在命令行：
+```
+git clone [address]
+```
+这样就会把包含.git文件的仓库复制到本地了，和github上的是一样的。之后使用你熟悉的编辑器，来进行更改，我在此使用Emacs，尝试加一行注释，保存之后，git就会记录你所做的更改
+
+使用
+```
+git diff
+```
+能够看到哪里更改了  
+确认要提交这些更改后进行下一节的操作。
+
+### Git Merge
+显示当前状态
+我们的项目，最外层是DoUNiu5v5的文件夹，里层的SPAFront是前端的，在操作git之前
+先cd到bullup5v5文件夹下，然后开始操作：
+```
+git status
+```
+显示当前项目的状态，有哪些文件添加了，删除了等等
+```
+git add .
+```
+一般用add命令去添加文件到git的追踪下，被追踪的文件会被commit到网络上去
+```
+git commit -m 'commit comment'
+```
+之后
+```
+git push
+```
+将你的更改上传到github
+
+注意，只有clone下来的仓库才能进行git操作，直接下载的不行。
+
+然后是和后端的合并：
+本项目的后端，目前主要的仓库是
+`guojingming/bullup5v5`
+在GitHub上，自己fork的项目中，点击pull request。如果没有冲突，显示Able to merge，如果有冲突，会提示；
+- 第一种情况下，直接点击 `Create Pull Request`，添加一些说明以后，就可以确定了。之后就到了这个界面，未被后端Merge的代码，显示该Pull Request为<span style = "color:#f0f0f0; background-color:#f50057; padding:0.06em 0.5em 0.06em; border-radius:6px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); margin-left: 2px; margin-right: 2px;">open</span>状态;只需要等待后端Merge就可以了；
+- 第二种情况下，仍然点击 `Create Pull Request`，之后会显示一个处理冲突的编辑器，在编辑器中，将冲突处理完毕之后，就可以点击确定了，之后继续等待后端的Merge；
+
+注意：
+在操作之前，确定已经将本地的内容push到github
+
+另一个重要的操作是将后端的新的代码pull到我们自己的Fork下来的仓库里。因为后端的仓库是主仓库，我们的是复制来的，所以我们需要自己给自己一个pull request然后自己Merge一下：  
+任意在一个仓库里点击Compare，然后再Base Fork这里，也就是前一个按钮，这里代表的是Merge的方向，是从后端Merge到我们的仓库。
+当点击了Pull Request之后，出现了Merge Pull Request按钮，Merge完毕的会显示Merged
+
 
 
 
