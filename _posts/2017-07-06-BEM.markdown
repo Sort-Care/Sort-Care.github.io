@@ -19,6 +19,6 @@ header:
 	line-height: 90%;
 	margin-right: 6px;
 	margin-bottom:-2px;
-	margin-top: 7px;">F</span>ollowing excerpts are from the book *Economics*, 9th edition, wrote by Paul A Samuelson.
+	margin-top: 7px;">B</span>EM naming methodology for web developing.
 
 # 
