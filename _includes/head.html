@@ -16,10 +16,32 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
 
-<meta http-equiv="cleartype" content="on">
 
 
-<!-- katex -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script> -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"> -->
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    {% if script contains "://" %}
+      {% capture script_path %}{{ script }}{% endcapture %}
+    {% else %}
+      {% capture script_path %}{{ script | absolute_url }}{% endcapture %}
+    {% endif %}
+    <script src="{{ script_path }}"></script>
+  {% endfor %}
+{% endif %}
+
