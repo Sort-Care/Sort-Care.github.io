@@ -66,7 +66,7 @@ In PageRank task, I am considering using ```Aggregator```'s subclass instance(ma
   
 When the worker performs a superstep it loops through all vertices and calls ```compute()```, passing it the current value, an iterator to the incoming messages, and an iterator to the outgoing edges.
 
-- **Tw**o copies of the active vertex **flags** and the **incoming message queue** exist: one for the current superstep and one for the next superstep
+- **Two** copies of the active vertex **flags** and the **incoming message queue** exist: one for the current superstep and one for the next superstep
 
 ### Master Implementation
 Primarily, the master is responsible for coordinating the activities of workers. Most master operations, including input, output, computation, and saving and resuming from checkpoints, are terminated at ```barriers```.
