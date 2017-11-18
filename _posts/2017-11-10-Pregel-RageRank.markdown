@@ -57,6 +57,25 @@ This is a project I am doing for a [course][590s]. The project's goal is to simu
 
 In PageRank task, I am considering using ```Aggregator```'s subclass instance(maybe a function is enough for this project) to aggregate message values sent to the same vertex.
 
+### Worker Implementation
+- The **state of each vertex** contains:
+  - current *value*
+  - a list of *outgoing edges*
+  - a *queue* containing *incoming messages*
+  - a flag specifying whether the vertex is *active*
+  
+When the worker performs a superstep it loops through all vertices and calls ```compute()```, passing it the current value, an iterator to the incoming messages, and an iterator to the outgoing edges.
+
+- **Tw**o copies of the active vertex **flags** and the **incoming message queue** exist: one for the current superstep and one for the next superstep
+
+### Master Implementation
+Primarily, the master is responsible for coordinating the activities of workers. Most master operations, including input, output, computation, and saving and resuming from checkpoints, are terminated at ```barriers```.
+
+### Aggregator Implementation
+An aggregator computes a single global value by applying an aggregation function to a set of values that the user supplies. When a worker executes a superstep for any partition of the graph, the worker combines all of the values supplied to an aggregator instance into a single value.
+
+
+
 [590s]:https://emeryberger.com/systems-for-data-science-compsci-590s/
 [Pregel]: https://kowshik.github.io/JPregel/pregel_paper.pdf
 [PageRank]: http://infolab.stanford.edu/pub/papers/google.pdf
