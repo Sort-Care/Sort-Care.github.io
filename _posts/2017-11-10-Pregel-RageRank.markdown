@@ -74,6 +74,47 @@ Primarily, the master is responsible for coordinating the activities of workers.
 ### Aggregator Implementation
 An aggregator computes a single global value by applying an aggregation function to a set of values that the user supplies. When a worker executes a superstep for any partition of the graph, the worker combines all of the values supplied to an aggregator instance into a single value.
 
+# My Thoughts
+## PageRank Class
++ Initialize edges; create ```vertices```; set ```superstep``` to zero
++ Start all vertices' ```threads```
++ While there are vertices voting -1
+  + clear ```votes```; clear ```rawMessageQueue```
+  + ```superstep += 1```
+  + notify all vertices' threads
+  + while true
+	+ try drain the ```rawMessageQueue```, aggregate them
+	+ count number of zeros in the ```votes``` array, say ```nv```
+	+ if ```nv==0```, which means all vertices have voted 1 or -1
+	  + drain the ```rawMessageQueue``` again, aggregate messages got
+	  + break;
+  + Count number of -1 in ```votes```
+  
+## Vertices
++ Up on start, halt
+  + waiting to be notified by master
+  + Upon notified, get the aggregated message from the in-message-queue.
+  + Tall```compute()```, where the ```new weight```, ```messages' value```, ```vote message``` would be computed or generated
+  + halt on ```superstep```
+  
+## ```Compute()``` function
++ Calculate new weight: 
+
+$$R = \frac{0.15}{n}+0.85 \sum_{j\in N_{in(i)}} M[j]$$
+
++ Calculate message value: 
+
+$$M = \frac{R}{\left|N_{out}\right|}$$
+
++ Send $$M$$ to all its outgoing edges' destination
++ Calculate error: 
+
+$$error = R - R_{previous}$$
+
++ Vote to halt (```1``` for voting to halt, ```-1``` otherwise)
++ Wait on ```superstep```
+
+
 
 
 [590s]:https://emeryberger.com/systems-for-data-science-compsci-590s/
