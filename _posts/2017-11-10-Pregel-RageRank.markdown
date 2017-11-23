@@ -78,24 +78,21 @@ An aggregator computes a single global value by applying an aggregation function
 ## PageRank Class
 + Initialize edges; create ```vertices```; set ```superstep``` to zero
 + Start all vertices' ```threads```
-+ While there are vertices voting -1
-  + clear ```votes```; clear ```rawMessageQueue```
++ While number of vertices that voting to halt is smaller than ```size```
+  + clear ```votes```; clear ```rawMessageQueue```; clear ```AggregatedMessageQueue```
   + ```superstep += 1```
-  + notify all vertices' threads
-  + while true
-	+ try drain the ```rawMessageQueue```, aggregate them
-	+ count number of zeros in the ```votes``` array, say ```nv```
-	+ if ```nv==0```, which means all vertices have voted 1 or -1
-	  + drain the ```rawMessageQueue``` again, aggregate messages got
-	  + break;
+  + Send message to all vertices for starting next ```superstep```
+  + while ```voteCount``` is smaller than ```size```
+	+ Count votes received and add it to ```voteCount```
+  + Aggregate ```rawMessageQueue``` into ```AggregatedMessageQueue```
   + Count number of -1 in ```votes```
   
 ## Vertices
-+ Up on start, halt
-  + waiting to be notified by master
-  + Upon notified, get the aggregated message from the in-message-queue.
-  + Tall```compute()```, where the ```new weight```, ```messages' value```, ```vote message``` would be computed or generated
-  + halt on ```superstep```
+ + Up on start, halt
+  + waiting for a message from Master that indicates starting of next ```superstep```
+  + get the aggregated message from the in-message-queue.
+  + Tall```compute()```, where the ```new weight```, ```messages' value```,```error```, ```vote message``` would be computed or generated.
+  + Pause thread and wait for next superstep to start
   
 ## ```Compute()``` function
 + Calculate new weight: 
@@ -113,6 +110,12 @@ $$error = R - R_{previous}$$
 
 + Vote to halt (```1``` for voting to halt, ```-1``` otherwise)
 + Wait on ```superstep```
+
+
+## Design Decisions
+### Communication between Master and Vertex Node
+
+### Aggregator
 
 
 
