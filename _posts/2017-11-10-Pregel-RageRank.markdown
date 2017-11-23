@@ -112,10 +112,16 @@ $$error = R - R_{previous}$$
 + Wait on ```superstep```
 
 
-## Design Decisions
-### Communication between Master and Vertex Node
+## Message Class
+Class ```Message``` is used for holding message information. It has several attributes:
++ type: Int
++ from: Integer
++ to: Integer
++ value: Double
++ isVote: boolean
++ vote: Int
 
-### Aggregator
+where, ```type``` indicates that if this message is a vote or a message that passing weight; ```from```, ```to``` marks the sender and receiver of this message; ```value``` holds the weight, would be null if message is a vote; ```isVote``` is a flag for marking votes message; ```vote``` indicates whether the vertex is voting to halt or not.
 
 
 
