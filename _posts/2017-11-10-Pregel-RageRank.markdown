@@ -94,6 +94,20 @@ An aggregator computes a single global value by applying an aggregation function
   + Tall```compute()```, where the ```new weight```, ```messages' value```,```error```, ```vote message``` would be computed or generated.
   + Pause thread and wait for next superstep to start
   
+
+
+## Message Class
+Class ```Message``` is used for holding message information. It has several attributes:
++ ```type```: Int
++ ```from```: Integer
++ ```to```: Integer
++ ```value```: Double
++ ```isVote```: boolean
++ ```vote```: Int
+
+where, ```type``` indicates that if this message is a vote or a message that passing weight; ```from```, ```to``` marks the sender and receiver of this message; ```value``` holds the weight, would be null if message is a vote; ```isVote``` is a flag for marking votes message; ```vote``` indicates whether the vertex is voting to halt or not.
+
+
 ## ```Compute()``` function
 + Calculate new weight: 
 
@@ -111,18 +125,8 @@ $$error = R - R_{previous}$$
 + Vote to halt (```1``` for voting to halt, ```-1``` otherwise)
 + Wait on ```superstep```
 
-
-## Message Class
-Class ```Message``` is used for holding message information. It has several attributes:
-+ type: Int
-+ from: Integer
-+ to: Integer
-+ value: Double
-+ isVote: boolean
-+ vote: Int
-
-where, ```type``` indicates that if this message is a vote or a message that passing weight; ```from```, ```to``` marks the sender and receiver of this message; ```value``` holds the weight, would be null if message is a vote; ```isVote``` is a flag for marking votes message; ```vote``` indicates whether the vertex is voting to halt or not.
-
+Note that initially, every vertex's weight would be set to $$\frac{1}{\#vertices}$$. Also, in the very first ```superstep```, the ```error``` shouldn't be computed because there
+are no $$R_{previous}$$ value available.
 
 
 
