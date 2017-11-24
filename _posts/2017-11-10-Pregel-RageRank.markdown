@@ -63,6 +63,7 @@ In PageRank task, I am considering using ```Aggregator```'s subclass instance(ma
   - a list of *outgoing edges*
   - a *queue* containing *incoming messages*
   - a flag specifying whether the vertex is *active*
+  - 
   
 When the worker performs a superstep it loops through all vertices and calls ```compute()```, passing it the current value, an iterator to the incoming messages, and an iterator to the outgoing edges.
 
@@ -75,6 +76,10 @@ Primarily, the master is responsible for coordinating the activities of workers.
 An aggregator computes a single global value by applying an aggregation function to a set of values that the user supplies. When a worker executes a superstep for any partition of the graph, the worker combines all of the values supplied to an aggregator instance into a single value.
 
 # My Thoughts
+
+## Structures
+{% include figure image_path="/assets/images/590sproject2archi.JPG" alt="PageRank" caption="PageRank Structure" %}
+
 ## PageRank Class
 + Initialize edges; create ```vertices```; set ```superstep``` to zero
 + Start all vertices' ```threads```
