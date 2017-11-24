@@ -78,7 +78,7 @@ An aggregator computes a single global value by applying an aggregation function
 # My Thoughts
 
 ## Structures
-{% include figure image_path="/assets/images/590sproject2archi.JPG" alt="PageRank" caption="PageRank Structure" %}
+![structure](/assets/images/590sproject2archi.JPG)
 
 ## PageRank Class
 + Initialize edges; create ```vertices```; set ```superstep``` to zero
