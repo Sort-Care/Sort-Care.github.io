@@ -137,8 +137,8 @@ are no $$R_{previous}$$ value available.
 
 [590s]:https://emeryberger.com/systems-for-data-science-compsci-590s/
 [Pregel]: https://kowshik.github.io/JPregel/pregel_paper.pdf
-[PageRank]: http://infolab.stanford.edu/pub/papers/google.pdf
+[PageRank]: https://infolab.stanford.edu/pub/papers/google.pdf
 [PageRankWiki]: https://en.wikipedia.org/wiki/PageRank
-[mitMessage]: http://web.mit.edu/6.005/www/fa14/classes/20-queues-locks/message-passing/
+[mitMessage]: https://web.mit.edu/6.005/www/fa14/classes/20-queues-locks/message-passing/
 [threads]:https://www.ibm.com/developerworks/java/tutorials/j-threads/j-threads.html
 

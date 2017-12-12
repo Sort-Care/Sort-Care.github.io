@@ -18,6 +18,7 @@ header:
 ## Link to your server
 
 ## Install Python2.7 or 3.6
+[centOS install py2.7][pyins]
 
 ## Install pip2.7 or pip3.6
 
@@ -26,3 +27,6 @@ header:
 ## Install Shadowsocks
 
 ## Setting up your Shadowsocks configuration
+
+
+[pyins]: https://danieleriksson.net/2017/02/08/how-to-install-latest-python-on-centos/
