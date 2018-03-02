@@ -1,0 +1,28 @@
+---
+layout: single
+title: Lisp
+date: 2017-12-14 10:47 +0800
+mathjax: true
+
+excerpt: "Learning Lisp"
+header:
+  teaser: /assets/images/economics.jpg
+  overlay_image: /assets/images/economics.jpg
+  overlay_filter: 0.5
+---
+{% include toc title="Contents" %}
+# Run Lisp
+In Emacs, `M-x run-lisp` would bring `*inferior-lisp*` buffer. In a lisp mode buffer, you can put the cursor behind the line or region you want to evaluate, and press `C-M-x`. The content would be sent to `*inferior-lisp*` buffer.
+
+# Experimenting with Lisp(CCL)
+
+```lisp
+(+ 2 3)
+```
+
+**Anything in parentheses is a list**. First element is treated as the name of a function and the rest of the elements as expressions to be evaluated to yield the arguments to the function.
+
+```lisp
+"hello, world"
+```
+The printer tries to print objects in the same syntax the reader understands.
