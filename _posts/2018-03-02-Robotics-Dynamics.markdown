@@ -38,7 +38,7 @@ $$
 $$
 
 
-<a id="orgf1f0328"></a>
+
 
 ## Construction of the inertia tensor
 
@@ -60,7 +60,7 @@ $$
 \end{align*}
 $$
 
-<a id="org33008ed"></a>
+
 
 ## The Parallel Axis Theorem
 
@@ -81,7 +81,7 @@ m(r_y^2 + r_z^2) &-m(r_x r_y) &-m(r_xr_z)\\
 \end{equation}
 $$
 
-<a id="org46b832c"></a>
+
 
 ## Rotating the Inertia Tensor
 
@@ -94,3 +94,18 @@ $$
 	&= (_1\mathbf{R}_0 \;\mathbf{J}_0 \;{_1\mathbf{R}_0}^T)\mathbf{\omega_1}
 \end{align}
 $$
+
+## Computed Torque Equation
+
+\[
+\tau = M(q)\ddot{q} + V(q,\dot{q}) + G(q) + F
+\]
+
+For a \(n\) degree of freedom robot:
+
+-   **\(q\):** \(n\times 1\) vector the configuration variables
+-   **\(\tau\):** \(n\times1\) vector of forces and/or torques
+-   **\(M(q)\):** \(n\times n\) configuration dependent generalized inertia matrix, it is positive definite and symmetric and is therefore, always invertible
+-   **\(V(q,\dot{q})\):** \(n\times 1\) vector depends on both positions \(q\) and velocities \(\dot{q}\) which represents centripetal and Coriolis forces.
+-   **\(G(q)\):** \(n\times 1\) vector of gravitational forces and/or torques.
+-   **\(F\):** the forces and torques in the mechanism from these types of "external" forces
