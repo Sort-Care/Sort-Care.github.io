@@ -1,0 +1,176 @@
+---
+layout: single
+title:  "Summary of Mask R-CNN"
+date:   2018-04-07 09:08:55 +0800
+mathjax: true
+
+excerpt: "Add a parallel mask branch, in a pixel-to-pixel manner."
+header:
+  teaser: /assets/images/codeback.jpg
+  overlay_image: /assets/images/codeback.jpg
+  overlay_filter: 0.4 # same as adding an opacity of 0.5 to a black background
+  
+---
+
+{% include toc title="Contents" %}
+
+# Abstract
+
+Simple, Flexible, General
+
+Simultaneously:
+
+1.  detect objects
+2.  high-quality segmentation mask
+
+Extends Faster R-CNN by: add a branch for predicting an object mask in parallel with existing branch for bounding box recognition.
+
+Simple to train
+
+
+
+# Introduction
+
+Instance segmentation:
+Hard because: 
+
+1.  correct detection of all objects (Object Detection)
+2.  segmenting each instance (Object Localization)
+
+**GOAL**:
+Classify each pixel into a fixed set of categories without differentiating object instance
+
+1.  Classification
+2.  Bounding box regression
+3.  (Added) Mask branch-small FCN applied to each Region of interest: Pixel to Pixel manner
+
+
+
+## RoIAlign
+
+Preserves exact spatial locations.
+
+Large Impact:
+
+1.  Accuracy improved (10-50%)
+2.  Decouple mask and class prediction:
+    Predict a binary mask for each class independently, without competition among classes.
+    Rely on network's RoI classification branch to predict the category.
+    FCNs perform per-pixel multi-class categorization
+3.  Fast train and test speed - one or two days to train, 200ms/frame to run
+
+
+
+# Related Work
+
+1.  R-CNN:
+    Bounding-box object detection: attend to a manageable number of candidate object regions and evaluate convolutional networks independently on each RoI.
+2.  Faster R-CNN:
+    Advanced this stream by learning the attention mechanism with a Region Proposal Network(RPN).
+3.  Instance Segmentation:
+    Earlier methods: Bottom-up segments - slow and inaccurate
+4.  FCIS-Fully Convolutional instance segmentation
+    Predict a set of position-sensitive output channels fully convolutionally.
+5.  Mask R-CNN is based on an instance-first strategy.
+
+
+
+# Mask R-CNN
+
+Adding a third branch that ouputs the object mask.
+
+Additional mask output is distinct from the class and box outputs, requiring extraction of much finer spatial layout of an object.
+
+
+
+## Key elements
+
+
+
+### Faster R-CNN
+
+consists of two stages.
+
+1.  RPN
+2.  Extraction of features using RoIPool from each candidate box and performs classification and bounding box regression.
+
+
+
+### Mask R-CNN
+
+Adopts the same two stage procedure.
+
+1.  Identical RPN
+2.  Also simultaneously outputs a binary mask for each RoI.
+
+Define a multi-task loss on each sampled RoI as
+\[
+	L = L_{cls} + L_{box} + L_{mask}
+\]
+
+-   The mask branch has a $Km^2$-dimentional output for each RoI, which encodes $K$ binary masks of resolution $m\times m$, one for each of the $K$ classes.
+-   Apply a pre-pixel sigmoid, and define $L_{mask}$ as the average binary cross-entropy loss.
+-   For an RoI associated with ground-truth class $k$, L mask is only deﬁned on the $k$-th mask (other mask outputs do not contribute to the loss). **This allows the network to generate masks for every class without competition among classes.** In other words, this decouples mask and class prediction.
+
+
+
+### Mask Representation
+
+-   A mask encodes an input object's spatial layout.
+-   Predict an $m\times m$ mask from each RoI using an FCN. This allows each layer in the mask branch to maintain the explicit $m\times m$ object spatial layout without collapsing it into a vector representation that lacks spatial dimension.
+-   Fewer parameters, more accurate
+-   This pixel-to-pixel behavior requires RoI features to be well aligned to faithfully preserve the explicit per-pixel spatial correspondence.
+
+
+
+### RoIAlign
+
+A standard operation for extracting a small feature map from each RoI.
+
+-   First, RoIPool quantizes a floating-number RoI to the discrete granularity of the feature map.
+-   Second, subdivide quantized RoI into spatial bins.
+-   Finally, aggregate feature values covered by each bin.
+
+Quantization is performed, e.g., on a continuous coordinate $x$ by computing $[x/16]$, where 16 is a feature map stride and $[\cdot]$ is rounding; quantization is performed when dividing into bins (e.g. $7\times 7$). Thus they introduce misalignments between the RoI and extracted features. It has a large negative effect on predicting pixel-accurate masks.
+
+**RoIAlign** layer: removes the harsh quantization of RoIPool, properly aligning the extracted features with the input. 
+**Proposed change:** 
+
+-   Avoid any quantization of the RoI boundaries or bins (i.e., use $x/16$ instead of $[x/16]$).
+-   Use *bilinear interpolation* to compute the exact values of the input features at four regularly sampled locations in each RoI bin
+-   Aggregate the result (max or average)
+
+We note that the results are not sensitive to the exact sampling locations, or how many points are sampled, as long as no quantization is performed.
+
+
+
+### Network Architecture
+
+Differentiate between:
+
+-   the convolutional backbone architecture used for feature extraction over an entire image
+-   the network head for bounding-box recognition and mask prediction that is applied separately to each RoI.
+
+Denote the *backbone* architecture using the nomenclature *network-depth-features*
+
+-   Feature Pyramid Network (FPN): top-down architecture with lateral connections to build an in-network feature pyramid from a single-scale input. **Form different levels of the feature pyramid according to their scale**.
+-   The rest is similar to vanilla ResNet
+
+Using a ResNet-FPN backbone of feature extraction with Mask R-CNN gives excellent gains in both accuracy and speed.
+
+-   **Network Head:** extend the faster R-CNN box heads from the ResNet and FPN papers. (5-th stage of ResNet)
+-   All convs are $3\times 3$, except the output conv is $1\times 1$.
+-   Deconvs are $2\times 2$ with stride 2
+-   ReLU used in hidden layers.
+
+
+
+### Implementation Details
+
+Hyper-parameters following existing Fast/Faster R-CNN work.
+
+1.  Training
+
+    1.  An RoI is considered positive if it has IoU with a groupd-truth box of at least 0.5 and negative otherwise. $L_{mask}$ is defined only on positive RoIs. The mask target is the intersection between an RoI and its associated ground-truth mask.
+    2.  Image-centric training. Scale images such that their scale (shorter edge) is 800 pixels.
+
