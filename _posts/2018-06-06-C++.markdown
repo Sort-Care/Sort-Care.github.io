@@ -1,0 +1,24 @@
+---
+layout: single
+title: C++ Essentials
+date: 2018-06-06 10:47 +0800
+mathjax: false
+
+excerpt: "C++ auto pointer and more"
+header:
+  teaser: /assets/images/economics.jpg
+  overlay_image: /assets/images/economics.jpg
+  overlay_filter: 0.5
+---
+{% include toc title="Contents" %}
+<span style = "display:block;
+	float:left;
+	font-family:Georgia;
+	font-size: 310%;
+	font-weight: bold;
+	line-height: 90%;
+	margin-right: 6px;
+	margin-bottom:-2px;
+	margin-top: 7px;">B</span>EM naming methodology for web developing.
+
+# 
