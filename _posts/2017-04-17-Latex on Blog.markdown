@@ -80,7 +80,6 @@ Note that, in my case, it seems like you better **leave blank lines** in your ma
 Katex is faster than Mathjax. To migrate, first check [kramdown doc][kramdown-katex]. You need ``JQuery``, ``Katex`` and an automatic rendering script. Check [Katex on Github][katex-git] and [Auto render][auto-render]. After doing these, you should have a working site with Katex.
 
 
-
 [jekyll-doc]:https://jekyllrb.com/docs/configuration/
 [Mathjax-doc]:http://docs.mathjax.org/en/latest/start.html
 [Mathjax-page]:http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page

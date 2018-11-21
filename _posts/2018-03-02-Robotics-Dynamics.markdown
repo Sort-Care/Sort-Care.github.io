@@ -101,11 +101,11 @@ $$
 \tau = M(q)\ddot{q} + V(q,\dot{q}) + G(q) + F
 \]
 
-For a \(n\) degree of freedom robot:
+For a $n$ degree of freedom robot:
 
--   **\(q\):** \(n\times 1\) vector the configuration variables
--   **\(\tau\):** \(n\times1\) vector of forces and/or torques
--   **\(M(q)\):** \(n\times n\) configuration dependent generalized inertia matrix, it is positive definite and symmetric and is therefore, always invertible
--   **\(V(q,\dot{q})\):** \(n\times 1\) vector depends on both positions \(q\) and velocities \(\dot{q}\) which represents centripetal and Coriolis forces.
--   **\(G(q)\):** \(n\times 1\) vector of gravitational forces and/or torques.
--   **\(F\):** the forces and torques in the mechanism from these types of "external" forces
+-   **$q$:** $n\times 1$ vector the configuration variables
+-   **$\tau$:** $n\times1$ vector of forces and/or torques
+-   **$M(q)$:** $n\times n$ configuration dependent generalized inertia matrix, it is positive definite and symmetric and is therefore, always invertible
+-   **$V(q,\dot{q})$:** $n\times 1$ vector depends on both positions $q$ and velocities $\dot{q}$ which represents centripetal and Coriolis forces.
+-   **$G(q)$:** $n\times 1$ vector of gravitational forces and/or torques.
+-   **$F$:** the forces and torques in the mechanism from these types of "external" forces
