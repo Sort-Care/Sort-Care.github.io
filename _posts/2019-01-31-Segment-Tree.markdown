@@ -44,6 +44,9 @@ left and right vertices. This building process runs recursively until leaf nodes
 Answering for $RMQ(i, j)$ query where $i < j$ is done recursively. Let $p1 = RMQ(i, (i+j)/2)$ and $p2 = RMQ((i+j)/2 + 1, j)$.
 Then compare $A[p1]$ with $A[p2]$, set the answer to be the smaller one. Detailed implementation is showed below.
 
+{% include figure image_path="/assets/images/segment_tree.png" alt="Segment Tree" caption="Segment Tree (VisuAlgo)" %}
+
+
 # When to Use Segment Tree
 
 Note that segment tree is overkill for static range queries. There exists $O(n \log n)$ Dynamic Programming solution for it which takes only $O(1)$ time per-query. The idea is to build a
