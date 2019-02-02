@@ -45,6 +45,7 @@ Answering for $RMQ(i, j)$ query where $i < j$ is done recursively. Let $p1 = RMQ
 Then compare $A[p1]$ with $A[p2]$, set the answer to be the smaller one. Detailed implementation is showed below.
 
 # When to Use Segment Tree
+
 Note that segment tree is overkill for static range queries. There exists $O(n \log n)$ Dynamic Programming solution for it which takes only $O(1)$ time per-query. The idea is to build a
 table where $i, j$ position value is the minimum value for the sub-array starting at position $i$ with length $2^j$. I will try to describe the details in another post.
 However, when the original array is frequently updated, segment tree is very useful and efficient.
@@ -52,6 +53,7 @@ However, when the original array is frequently updated, segment tree is very use
 # Implementation
 
 ## Header File
+
 The following is ```segment_tree.hpp``` file.
 
 ```c++
@@ -111,6 +113,7 @@ public:
 #endif
 ```
 ## Test File
+
 Test it with the following code (```main.cpp```):
 
 ```c++
@@ -124,6 +127,5 @@ int main(){
   std::cout << "RMQ(1, 3) = " << st.rmq(1, 3) << std::endl;
   std::cout << "RMQ(4,6) = " << st.rmq(4, 6) << std::endl;
 }
-
 ```
 

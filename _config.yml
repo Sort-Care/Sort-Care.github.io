@@ -252,3 +252,9 @@ defaults:
       comments: true
       share: true
       related: true
+
+manifest_name: Haoyu Ji's Blog
+manifest_short_name: Haoyu Blog
+manifest_lang: en
+manifest_background_color: white
+manifest_display: standalone
