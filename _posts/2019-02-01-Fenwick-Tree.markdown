@@ -26,7 +26,9 @@ header:
 To explain how this works, we first define a function $LSOne(i)$, which produces the first **Least Significant One-bit** in $i$. The underlying operation is bit manipulation  
 ```(i & (-i))```.
 
-A Fenwick tree is usually implemented as an array (a ```std::vector``` in this blog), where indices fall in the range $[1 \ldots n]$. We will make the vector big enought to contain all the elements and also skip index zero for simplicity. Let's assume that the Fenwick tree is ```ft```. Then the element at index $i$ is responsible for elements in the range $[i-LSOne(i)+1 \ldots i]$, that is from the index: $i$ subtracted by its least significant one-bit plus one, to the index: $i$. (TODO: I should include a figure below to make things extremely clear about how Fenwick tree works.)
+A Fenwick tree is usually implemented as an array (a ```std::vector``` in this blog), where indices fall in the range $[1 \ldots n]$. We will make the vector big enought to contain all the elements and also skip index zero for simplicity. Let's assume that the Fenwick tree is ```ft```. Then the element at index $i$ is responsible for elements in the range $[i-LSOne(i)+1 \ldots i]$, that is from the index: $i$ subtracted by its least significant one-bit plus one, to the index: $i$.
+{% include figure image_path="/assets/images/fenwick_tree.png" alt="Fenwick Tree" caption="Figure From VisuAlgo" %}
+
 
 # Operations
 Once the tree is built, the next question is how to use it, dynamically. There are two basic operations: 1. query, 2. update. We will go through them in details.
