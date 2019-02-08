@@ -10,6 +10,8 @@ header:
   overlay_image: /assets/images/circle.png
   overlay_filter: 0.5
 ---
+{% include toc title="Contents" %}
+
 # Introduction
 The **Union-Find Disjoint Set (UFDS)** is a data structure to model a collection of disjoint sets with the ability
 to efficiently determine which set an item belongs to in constant time. It is usually used to solve the problem of finding connected

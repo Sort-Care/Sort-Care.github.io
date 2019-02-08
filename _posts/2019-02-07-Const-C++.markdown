@@ -1,0 +1,40 @@
+---
+layout: single
+title: Const Keyword in C++
+date: 2019-02-07 10:47 +0800
+mathjax: false
+
+excerpt: "A very brief Summary on const keyword."
+
+header:
+  teaser: /assets/images/circle.png
+  overlay_image: /assets/images/circle.png
+  overlay_filter: 0.4
+---
+{% include toc title="Contents" %}
+
+I found this issue has been one of those that made me open Google a lot. So I figured a summary in my blog might be great.
+
+# Used with Functions
+
+<span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```typename``` ```function_name(...)``` <span style="color: white; background-color: #ff8844; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```;```
+
+The first `const` applies to the returned type instance (this will not have any effect on built-in types). Thus, when it is used on any non-built-in types, the caller of the function is not suppose to or able to change returned value.
+
+The latter one appears when this function is a member function of some object. It says that in this function, no member variables will be modified, unless those declared as `mutable`.
+
+# Used with Pointers
+
+<span style="color: white; background-color: #8866ff; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```typename *``` <span style="color: white; background-color: #4499ee; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```var_name``` ```;```
+
+The first one means that the pointer is pointing to a `const` variable of type `typename`, that is the thing it points to has a constant value and should not be changed. Note that it is the same if it is written as `typename const* var_name`.
+
+The second one means that the pointer itself is immutable, that is, we cannot change what it points to.
+
+# Test Your Understanding!
+Now, try to explain the following mad example. :)
+
+<span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```T*``` <span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```function_name(```
+<span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```K*``` <span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span>
+```ptr```
+```)``` <span style="color: white; background-color: #ff8844; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">const</span> ```;```

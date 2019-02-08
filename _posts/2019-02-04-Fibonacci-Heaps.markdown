@@ -10,6 +10,8 @@ header:
   overlay_image: /assets/images/circle.png
   overlay_filter: 0.4
 ---
+{% include toc title="Contents" %}
+
 # Introduction
 The Fibonacci heap data structure serves a dual purpose.
 1. It supports a set of operations that constitutes what is known as a "mergeable heap"
