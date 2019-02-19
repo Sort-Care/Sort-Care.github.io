@@ -61,3 +61,80 @@ By definition, empty string is both a suffix and a prefix of all strings.
 From the notations we already have, we can move forward to have the following lemma.
 - **Overlapping-suffix Lemma** : Suppose that $x$, $y$, and $z$ are strings such that $x\sqsupset z$ and $y \sqsupset z$.
 If $|x| \leq |z|$, then $x \sqsupset y$. If $|x|\geq |y|$, then $y\sqsupset x$. If $|x| = |y|$, then x=y.
+
+
+# KMP Implementation in C++
+{% highlight cpp %}
+#include <iostream>
+#include <cstring>
+#include <vector>
+
+#define LOG(X) std::cout << X << std::endl
+
+/*
+ * KMP string matching algorithm
+ * Input:
+ * - T: the string where we are searching for pattern P
+ * - P: the target string pattern
+ * - shifts: Used to store all found valid shifts
+ */
+void KMP_matcher(std::string T, std::string P, std::vector<int>& shifts);
+
+/*
+ * Function to compute the prefix function, that is compare P against itself.
+ * Input:
+ * - P: the given pattern
+ * - pi: the array to store the results
+ */
+void compute_prefix_function(std::string P, int *pi);
+
+int main(){
+  std::string T = "bahjicbababaabhjicbabhji";
+  std::string P = "aba";
+  std::vector<int> shifts;
+  KMP_matcher(T, P, shifts);
+  for(auto i : shifts){
+    LOG(i);
+  }
+  return 0;
+}
+
+void KMP_matcher(std::string T,
+                 std::string P,
+                 std::vector<int>& shifts){
+  int n = T.length();
+  int m = P.length();
+  int pi[m];
+  compute_prefix_function(P, pi);
+
+  int q = 0; // the number of characters matched
+  for (int i = 0; i < n ; i ++){ // scan through the string T
+    while (q > 0 && P[q] != T[i]){
+      q = pi[q-1];
+    }
+    if (P[q] == T[i]){
+      q++;
+    }
+    if(q == m){
+      shifts.push_back(i-m);
+      q = pi[m-1];
+    }
+  }
+}
+
+void compute_prefix_function(std::string P, int *pi){
+  int m = P.length();
+  pi[0] = 0;
+  int k = 0;
+  for (int q = 1; q < m ; q ++){
+    while(k > 0 && P[k] != P[q]){
+      k = pi[k-1];
+    }
+    if (P[k] == P[q]){
+      k++;
+    }
+    pi[q] = k;
+  }
+}
+
+{% endhighlight%}
