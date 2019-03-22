@@ -19,6 +19,9 @@ I didn't realize how much time we can save by replace `i++` with `i+=2` until I 
 an experiment to validate if this is still true nowadays. It is, and I will include that experiment in another post.
 For this post, I am going to note down all quick tips I found useful for optimizing code.
 
+# Optimization Overview
+
+
 # Optimization Tips
 1. The C++ STL provided `algorithm::sort` is cache-friendly. While the `heapsort` is not (its root-to-leaf/leaf-to-root operations
 span a wide range of indices-lots of cache misses).
