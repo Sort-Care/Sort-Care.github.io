@@ -1,0 +1,40 @@
+---
+layout: single
+title: Clojure
+date: 2019-09-07 10:47 +0800
+mathjax: false
+
+excerpt: "Clojure Functional Programming"
+
+header:
+  teaser: /assets/images/circle.png
+  overlay_image: /assets/images/circle.png
+  overlay_filter: 0.4
+---
+{% include toc title="Contents" %}
+
+# Functional Programming
+
+
+# Clojure
+## Basic functions:
+```clojure
+(println "Hello, Clarice")
+(str 3 " " 2 " " 1 " " "Blast off!") ; Fly to the moon
+(count "Hello, Clarice") ; 12
+(println true)
+(println false)
+(println "Home:" nil)
+```
+
+## Arithmetic
+```clojure
+(+ 1900 84) ;1984
+(* 16 124)  ;1984
+(- 2000 16) ;1984
+(/ 25792 13);1984
+(/ 8 3)     ; will get 8/3
+(quot 8 3)  ; will get 2
+```
+By default, Clojure turns unadorned numeric literals into integers.
+
