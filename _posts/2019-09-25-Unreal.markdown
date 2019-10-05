@@ -1,0 +1,59 @@
+---
+layout: single
+title: Unreal Engine Introduction
+date: 2019-09-25 10:47 +0800
+mathjax: false
+
+excerpt: "Learning about game engine under the hood"
+header:
+  teaser: /assets/images/economics.jpg
+  overlay_image: /assets/images/economics.jpg
+  overlay_filter: 0.5
+---
+{% include toc title="Contents" %}
+
+# Background
+<span style = "display:block;
+	float:left;
+	font-family:Georgia;
+	font-size: 310%;
+	font-weight: bold;
+	line-height: 90%;
+	margin-right: 6px;
+	margin-bottom:-2px;
+	margin-top: 7px;">I</span> have always been interested in MOBA games. I myself is a League of Legends player for 5 years. That brought
+me into a long time thinking how a MOBA game is designed and implemented from scratch. The task seems rather complicated and demanding. You
+not only need to design it so that everything works but also need to make sure all the communication between clients and servers are fast enough
+to meet the requirements for intense gameplay. Any thing that makes a player feels laggy will cause the loss of players.
+
+
+
+# Material I Used
+I found some courses on Udemy, namely the "Unreal Multiplayer Master: Online Game Development In C++" will be the one that gives all the contents
+in this note.
+
+# Multiplayer Under the Hood
+There are couple of major conponents for a MOBA game. 
+1. <span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">Map</span>
+2. <span style="color: white; background-color: #ff8844; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">GameMode</span> 
+3. <span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">PlayerController</span>
+4. <span style="color: white; background-color: #ff5555; padding:0.3em 0.5em 0.3em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)">Pawn</span> 
+
+The process goes like this:
+1. Unreal loads the Map
+2. The Map specifies a GameMode
+3. The PlayerController joins the Map
+4. It ask the GameMode to spawn a Pawn
+5. The Pawn is linked to the PlayerController
+
+
+# Launch a Server and Some Clients
+## Server
+```bash
+[UE4Editor.exe_LOCATION] [.uproject_LOCATION] /Game/[MAP_LOCATION] -server -log
+```
+## Client
+```bash
+[UE4Editor.exe_LOCATION] [.uproject_LOCATION] [IP_ADDRESS] -game -log
+```
+
