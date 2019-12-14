@@ -81,7 +81,7 @@ Katex is faster than Mathjax. To migrate, first check [kramdown doc][kramdown-ka
 
 
 [jekyll-doc]:https://jekyllrb.com/docs/configuration/
-[Mathjax-doc]:http://docs.mathjax.org/en/latest/start.html
+[Mathjax-doc]:http://docs.mathjax.org/en/latest/web/start.html
 [Mathjax-page]:http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page
 [kramdown-katex]:https://kramdown.gettalong.org/math_engine/mathjax.html
 [katex-git]:https://github.com/Khan/KaTeX
