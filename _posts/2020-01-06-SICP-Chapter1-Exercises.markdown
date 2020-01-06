@@ -1228,7 +1228,7 @@ You can obtain an even more general version of `accumulate` by introducing the n
 ;; 377 = (+ 4 9 25 49 121 169)
 ```
 
-1.  
+2.  
 
 ```scheme
   (define (gcd a b)
@@ -1613,7 +1613,7 @@ Thus the result should be 16+5 = 21.
 
 A easier way to deduct this: `double` is nested, and finally applied to `inc`.
 
-\[ ((2^2)^2)^2 \times (+1) = 16 \]
+\[ (2^2)^2 \times (+1) = 16 \]
 
 Running it verifies this fact. The answer is 16+5 = 21.
 
@@ -1737,7 +1737,7 @@ Do some experiments to determine how many average damps are required to compute 
 (fixed-point ((repeated average-damp 4) (nth-root-mapsto 16 133)) 1.0)
 ```
 
-The pattern I found from running different experiments is that: \\(D = \lfloor \log n \rfloor\\), where \\(D\\) is the required times of damping needed to compute the root for $n$th roots.
+The pattern I found from running different experiments is that: \\(D = \lfloor \log n \rfloor\\), where \\(D\\) is the required times of repeated damping needed to compute the root for $n$th roots.
 
 ## 1.46<a id="sec-1-46"></a>
 
