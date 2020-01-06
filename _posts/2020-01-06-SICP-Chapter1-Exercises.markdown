@@ -277,7 +277,14 @@ Give concise mathematical definitions for the functions computed by the procedur
 
 A function \\(f\\) is defined as follows:
 
-\[ f(n) = \begin{cases} n &\text{if } n < 3\\ f(n-1) + 2f(n-2) + 3f(n-3) &\text{if } n \geq 3 \end{cases} \]
+$$ 
+f(n) = 
+
+\begin{cases} 
+n &\text{if } n < 3\\ 
+f(n-1) + 2f(n-2) + 3f(n-3) &\text{if } n \geq 3 
+\end{cases} 
+$$
 
 Write a procedure that computes \\(f\\) by means of an iterative process.
 
@@ -1496,7 +1503,15 @@ A continued fraction representation of the tangent function was published in 177
 
 where \\(x\\) is radians. Define a procedure `(tan-cf x k)` that computes an approximation to the tangent function based on Lambert's formula. \\(K\\) specifies the number of terms to compute, as in exercise 1.37.
 
-One observation is that, we should take the minus sign into \\(N_i\\) to make it compatible with `cont-frac`: \[ N_i = \begin{cases} x &i = 1\\ -x^2 &i = 2, 3, \cdots \end{cases} \]
+One observation is that, we should take the minus sign into \\(N_i\\) to make it compatible with `cont-frac`: 
+
+$$ 
+N_i = 
+\begin{cases} 
+x &i = 1\\ 
+-x^2 &i = 2, 3, \cdots 
+\end{cases} 
+$$
 
 And for \\(D_i\\):
 
