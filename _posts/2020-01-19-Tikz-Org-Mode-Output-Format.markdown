@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Tikzpicture Unable to Genrating Png in Org
+title: Tikzpicture Unable to Genrate png in Org
 date: 2020-01-19 10:47 +0800
 mathjax: false
 
@@ -21,7 +21,7 @@ header:
 	margin-bottom:-2px;
 	margin-top: 7px;">I</span> was trying to embed `tikzpicture` code in my org files. But fount that whenever I want to output the latex source code written to generate a picture, I was only able to do it when the `:file` option is set to `svg`. It will give not authorized error for `png` files.
 
-For example, I have the following code blocks:
+For example, I have the following code blocks in my org file:
 ```latex
 #+name: 2.24-list-tree
 #+header: :results value file
@@ -43,7 +43,7 @@ For example, I have the following code blocks:
 #+end_src
 ```
 
-and it never generates the file. Later I found that the issue is with the debian version of the package ~imagemagick~. In order to re-enable us to generate `png` files, do the following:
+and it never generates the file. Later I found that the issue is with the debian version of the package `imagemagick`. In order to re-enable us to generate `png` files, do the following:
 1. Switch to root user
 2. Edit file `/etc/ImageMagic-6/policy.xml`
 3. Replace `<policy domain="coder" rights="none" pattern="PDF" />` with  
